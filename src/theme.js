@@ -4,6 +4,7 @@ export const theme = {
         slateGray: "#6E7E91",
         scienceBlue: "#0366D6",
         white: "#ffffff",
+        mineShaft: "#252525",
     },
 
     breakpoints: {

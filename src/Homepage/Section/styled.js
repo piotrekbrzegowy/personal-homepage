@@ -6,6 +6,8 @@ export const Section = styled.section`
     background-color: ${() => theme.colors.white};
     padding: 32px;
     margin: 63px 0 0 0;
+    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    border-radius: 4px;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         padding: 16px;

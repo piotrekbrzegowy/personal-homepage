@@ -27,3 +27,11 @@ export const skillsData = [
     "Adobe Premiere Pro",
     "Adobe Creative Cloud",
 ];
+
+export const futureSkillsData = [
+    "Typescript",
+    "React Native",
+    "React Context",
+    "JS Classes",
+    "Unit testing",
+];
