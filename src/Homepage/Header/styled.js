@@ -5,11 +5,11 @@ import { ReactComponent as EnvelopeIcon } from "./img/envelope.svg";
 export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 66px;
+    gap: 66px;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         grid-template-columns: 1fr;
-        grid-gap: 16px;
+        gap: 16px;
     }
 `;
 
@@ -63,6 +63,7 @@ export const Button = styled.button`
     width: 154px;
     height: 49px;
     font-size: 20px;
+    line-height: 110%;
     padding: 0px;
     background-color: ${() => theme.colors.scienceBlue};
     color: ${() => theme.colors.white};
