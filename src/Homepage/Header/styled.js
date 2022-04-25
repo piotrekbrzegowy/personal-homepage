@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 import { ReactComponent as EnvelopeIcon } from "./img/envelope.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 66px;
