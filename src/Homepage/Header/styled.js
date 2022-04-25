@@ -72,6 +72,10 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
 
+    &:hover {
+    box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+    }
+
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         width: 138px;
         height: 46px;

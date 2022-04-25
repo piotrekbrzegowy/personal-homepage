@@ -19,6 +19,10 @@ export const Item = styled.li`
 
 export const Link = styled.a`
     color: black;
+
+    &:hover{
+    color: ${() => theme.colors.scienceBlue};
+    }
 `;
 
 export const styledIcon = (Icon) => styled(Icon)`

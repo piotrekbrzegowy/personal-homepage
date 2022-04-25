@@ -20,6 +20,10 @@ export const Tile = styled.div`
     border-radius: 4px;
     padding: 56px;
 
+    &:hover {
+    border: 6px solid rgba(3, 102, 214, 0.2);
+    }
+
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         max-width: none;
         padding: 24px;

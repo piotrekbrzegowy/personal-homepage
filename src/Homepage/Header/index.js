@@ -5,7 +5,7 @@ export const Header = () => {
 	return (
 		<>
 			<Wrapper>
-				<Image src={profilePhoto} />
+				<Image src={profilePhoto} alt="profile photo" />
 				<Content>
 					<SmallText>This is</SmallText>
 					<Title>Piotrek Brzegowy</Title>

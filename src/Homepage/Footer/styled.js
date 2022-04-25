@@ -27,6 +27,10 @@ export const Title = styled.h2`
     font-weight: 900;
     margin: 0;
 
+    &:hover{
+    color: ${() => theme.colors.scienceBlue};
+    }
+
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 18px;
     }
