@@ -34,6 +34,7 @@ export const Title = styled.h2`
     color: ${() => theme.colors.scienceBlue};
     margin: 0 0 24px 0;
     font-size: 24px;
+    word-break: break-word;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 16px;
@@ -46,6 +47,7 @@ export const Description = styled.p`
     color: ${() => theme.colors.slateGray};
     line-height: 140%;
     margin: 0 0 16px 0;
+    word-break: break-all;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 14px;
@@ -56,6 +58,7 @@ export const Description = styled.p`
 export const LinksDescription = styled(Description)`
     margin: 8px 0 0 0;
     line-height: 120%;
+    word-break: unset;
 `;
 
 export const LinksSection = styled.div`
@@ -67,6 +70,7 @@ export const Link = styled.a`
     font-size: 18px;
     color: ${() => theme.colors.scienceBlue};
     margin: 8px 0 0 0px;
+    word-break: break-all;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 14px;
