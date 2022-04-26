@@ -1,13 +1,6 @@
 import axios from "axios";
 
-const githubAPIBaseURL = "https://api.github.com";
-const username = "piotrekbrzegowy";
-
-export const getRepositories = async() => {
-    try {
-        const response = await axios.get(`${githubAPIBaseURL}/users/${username}/repos?sort=created`);
+export const getRepositories = async(path) => {
+        const response = await axios.get(path);
         return response.data;
-    } catch(error) {
-        console.error(error);
-    }
 };
