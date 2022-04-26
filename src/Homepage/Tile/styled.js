@@ -47,7 +47,7 @@ export const Description = styled.p`
     color: ${() => theme.colors.slateGray};
     line-height: 140%;
     margin: 0 0 16px 0;
-    word-break: break-all;
+    word-break: break-word;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 14px;
@@ -70,7 +70,7 @@ export const Link = styled.a`
     font-size: 18px;
     color: ${() => theme.colors.scienceBlue};
     margin: 8px 0 0 0px;
-    word-break: break-all;
+    word-break: break-word;
 
     @media(max-width: ${() => theme.breakpoints.mobileMax}px){
         font-size: 14px;
