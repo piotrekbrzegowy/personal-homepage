@@ -4,27 +4,23 @@ const homepageSlice = createSlice({
     name: "homepage",
     initialState: {
         repositories: [],
-        loading: true,
-        error: false,
+        status: "initial",
     },
     reducers: {
         fetchRepositories: (state) => {
-            state.loading = true;
-            state.error = false;
+            state.repositories = null;
+            state.status = "loading";
         },
         fetchRepositoriesSuccess: (state, {payload: data}) => {
             state.repositories = data;
-            state.loading = false;
-            state.error = false;
+            state.status = "success";
         },
         fetchRepositoriesError: (state) => {
-            state.loading = false;
-            state.error = true;
+            state.status = "error";
         },
         resetState: (state) => {
             state.repositories = [];
-            state.loading = [];
-            state.error = [];
+            state.status = "initial";
         },
     },
 })
@@ -32,7 +28,7 @@ const homepageSlice = createSlice({
 export const { fetchRepositories, fetchRepositoriesSuccess, fetchRepositoriesError, resetState} = homepageSlice.actions;
 
 export const selectRepositories = (state) => state.homepage.repositories;
-export const selectLoading = (state) => state.homepage.loading;
-export const selectError = (state) => state.homepage.error;
+export const selectLoading = (state) => state.status === "loading";
+export const selectError = (state) => state.status === "error";
 
 export default homepageSlice.reducer;
