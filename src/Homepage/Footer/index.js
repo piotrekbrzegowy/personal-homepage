@@ -1,4 +1,4 @@
-import { email } from "../email";
+import { email } from "../links";
 import { SocialIcons } from "./SocialIcons";
 import { Description, SmallText, TitleLink, Wrapper } from "./styled";
 

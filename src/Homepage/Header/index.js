@@ -1,6 +1,6 @@
 import { Wrapper, Image, SmallText, Title, Content, Description, ButtonLink, ButtonIcon } from "./styled";
 import profilePhoto from "./img/photo.jpg";
-import { email } from "../email";
+import { email } from "../links";
 
 export const Header = () => {
 	return (
