@@ -59,7 +59,7 @@ export const Description = styled.p`
     }
 `;
 
-export const Button = styled.button`
+export const ButtonLink = styled.a`
     width: 154px;
     height: 49px;
     font-size: 20px;
@@ -71,6 +71,7 @@ export const Button = styled.button`
     border-radius: 4px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 
     &:hover {
     box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
