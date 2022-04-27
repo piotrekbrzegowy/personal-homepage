@@ -19,7 +19,7 @@ export const TilesSection = () => {
 
     return (
         <>
-            <StateChecker isLoading={isLoading}>
+            <StateChecker isLoading={isLoading} isError={isError}>
                 <Wrapper>{data.map(({ id, name, description, homepage, html_url }) => (
                     <Tile key={id && id}>
                         <Title>{name && name}</Title>
