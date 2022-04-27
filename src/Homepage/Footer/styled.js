@@ -22,10 +22,12 @@ export const SmallText = styled.p`
     }
 `;
 
-export const Title = styled.h2`
+export const TitleLink = styled.a`
     font-size: 32px;
     font-weight: 900;
     margin: 0;
+    text-decoration: none;
+    color: ${() => theme.colors.black};
 
     &:hover{
     color: ${() => theme.colors.scienceBlue};
