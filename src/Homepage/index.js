@@ -14,7 +14,7 @@ export const Homepage = () => {
             <Skills title={"My skillset includes"} skills={skillsData} />
             <Skills title={"What I want to learn next"} skills={futureSkillsData} />
             <SubHeader />
-               <TilesSection />
+                <TilesSection />
             <Footer />
         </Wrapper>
     )
