@@ -6,6 +6,7 @@ export const theme = {
         white: "#ffffff",
         mineShaft: "#252525",
         dodgerBlue:"#2188FF",
+        black: "#000000",
     },
 
     breakpoints: {
