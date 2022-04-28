@@ -13,11 +13,12 @@ export const Wrapper = styled.header`
 `;
 
 export const Image = styled.img`
-    max-width: 398px;
+    width: 398px;
+    height: auto;
     border-radius: 50%;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
-        max-width: 132px;
+        width: 132px;
     }
 `;
 
