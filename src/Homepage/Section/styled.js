@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
 import { ReactComponent as Bullet } from "./img/bullet.svg";
 
 export const Section = styled.section`
-    background-color: ${() => theme.colors.white};
+    background-color: ${({ theme }) => theme.background.secondary};
     padding: 32px;
     margin: 63px 0 0 0;
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: 4px;
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         padding: 16px;
         margin: 48px 0 0 0;
     }
@@ -20,9 +19,9 @@ export const Title = styled.h2`
     font-size: 30px;
     font-weight: 900;
     padding: 0 0 15px 0;
-    border-bottom: 1px solid rgba(209, 213, 218, 0.3);
+    border-bottom: 1px solid ${({ theme }) => theme.border};
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin: 0 0 12px 0;
         font-size: 18px;
         padding: 0 0 12px 0;
@@ -34,16 +33,16 @@ export const List = styled.ul`
     margin: 0;
     list-style-type: none;
     font-size: 18px;
-    color: ${() => theme.colors.slateGray};
+    color: ${({ theme }) => theme.text.secondary};
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 
-    @media(max-width:${() => theme.breakpoints.tabletVerticalMax}px){
+    @media(max-width:${({ theme }) => theme.breakpoints.tabletVerticalMax}px){
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media(max-width:${() => theme.breakpoints.mobileMax}px){
+    @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}px){
         grid-template-columns: 1fr;
         font-size: 14px;
     }
@@ -59,7 +58,7 @@ export const ListBullet = styled(Bullet)`
     height: 9px;
     margin: 0 16px 0 0;
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         width: 6px;
         height: 6px;
         margin: 0 8px 0 0;

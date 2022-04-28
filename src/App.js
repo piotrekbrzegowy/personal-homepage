@@ -3,12 +3,12 @@ import { ThemeProvider } from "styled-components";
 import store from "./store";
 import { GlobalStyle } from "./GlobalStyle";
 import { Homepage } from "./Homepage";
-import { theme } from "./theme";
+import { lightTheme } from "./theme";
 
 function App() {
   return (
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         <Homepage />
       </ThemeProvider>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
 import { ReactComponent as SpinnerIcon } from "./img/spinner.svg";
 
 export const Wrapper = styled.div`
@@ -12,10 +11,10 @@ export const Wrapper = styled.div`
 
 export const Description = styled.p`
     font-size: 20px;
-    color: ${() => theme.colors.black};
+    color: ${({ theme }) => theme.text.primary};
     margin: 88px 0 48px 0;
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
       font-size: 17px;
     }
 `;
@@ -32,7 +31,7 @@ export const Spinner = styled(SpinnerIcon)`
     }
   }
 
-  @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
     width: 100px;
     margin: 0 0 100px 0;
   }

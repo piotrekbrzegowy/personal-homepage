@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
 
 export const List = styled.ul`
     list-style-type: none;
@@ -8,7 +7,7 @@ export const List = styled.ul`
     display: flex;
     gap: 24px;
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin: 28px 0 30px 0;
     }
 `;
@@ -21,7 +20,7 @@ export const Link = styled.a`
     color: black;
 
     &:hover{
-    color: ${() => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.text.contrast};
     }
 `;
 
@@ -29,7 +28,7 @@ export const styledIcon = (Icon) => styled(Icon)`
     width: 48px;
     height: auto;
 
-    @media(max-width: ${() => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         width: 32px;
     }
 `;
