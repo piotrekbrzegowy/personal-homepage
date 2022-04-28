@@ -21,11 +21,11 @@ export const TilesSection = () => {
         <>
             <StateChecker isLoading={isLoading} isError={isError}>
                 <Wrapper>{data.map(({ id, name, description, homepage, html_url }) => (
-                    <Tile key={id && id}>
-                        <Title>{name && name}</Title>
-                        <Description>{description && description}</Description>
-                        <LinksSection><LinksDescription>Demo:</LinksDescription><Link target="_blank" rel="noreferrer" href={homepage}>{homepage && homepage}</Link></LinksSection>
-                        <LinksSection><LinksDescription>Code:</LinksDescription><Link target="_blank" rel="noreferrer" href={html_url}>{html_url && html_url}</Link></LinksSection>
+                    <Tile key={id}>
+                        <Title>{name}</Title>
+                        {description && <Description>{description}</Description>}
+                        {homepage && <LinksSection><LinksDescription>Demo:</LinksDescription><Link target="_blank" rel="noreferrer" href={homepage}>{homepage}</Link></LinksSection>}
+                        {html_url && <LinksSection><LinksDescription>Code:</LinksDescription><Link target="_blank" rel="noreferrer" href={html_url}>{html_url}</Link></LinksSection>}
                     </Tile>
                 ))}
                 </Wrapper>
