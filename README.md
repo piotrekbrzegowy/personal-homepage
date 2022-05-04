@@ -1,6 +1,6 @@
 # My personal homepage
 
-This is my personal homepage with my all project fetched from github API [Personal homepage](https://piotrekbrzegowy.github.io/personal-homepage/).
+This is my personal homepage with my all project fetched from the github API [Personal homepage](https://piotrekbrzegowy.github.io/personal-homepage/).
 
 ## Available Scripts
 
