@@ -20,6 +20,7 @@ export const Title = styled.h2`
     font-weight: 900;
     padding: 0 0 15px 0;
     border-bottom: 1px solid ${({ theme }) => theme.border};
+    color: ${({ theme }) => theme.text.primary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin: 0 0 12px 0;

@@ -17,7 +17,7 @@ export const Item = styled.li`
 `;
 
 export const Link = styled.a`
-    color: black;
+    color: ${({ theme }) => theme.text.primary};
 
     &:hover{
     color: ${({ theme }) => theme.text.contrast};

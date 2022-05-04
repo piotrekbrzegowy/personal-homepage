@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 export const Tile = styled.div`
     max-width: 592px;
     background-color: ${({ theme }) => theme.background.secondary};
-    border: 6px solid rgba(209, 213, 218, 0.3);
+    border: 6px solid ${({ theme }) => theme.border};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: 4px;
     padding: 56px;
@@ -30,7 +30,7 @@ export const Tile = styled.div`
 `;
 
 export const Title = styled.h2`
-    color: ${({ theme }) => theme.text.contrast};
+    color: ${({ theme }) => theme.tile.title};
     margin: 0 0 24px 0;
     font-size: 24px;
     word-break: break-word;

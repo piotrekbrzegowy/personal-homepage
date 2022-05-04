@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
 
 export const Icon = styled(GithubIcon)`
     width: 40px;
+    color: ${({ theme }) => theme.text.contrast};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         width: 32px;
@@ -24,6 +25,7 @@ export const Title = styled.h2`
     font-size: 30px;
     font-weight: 900;
     margin: 13px 0 8px 0;
+    color: ${({ theme }) => theme.text.primary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         font-size: 18px;

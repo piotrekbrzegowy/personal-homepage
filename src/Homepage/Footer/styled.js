@@ -41,6 +41,7 @@ export const Description = styled.p`
     font-size: 18px;
     line-height: 140%;
     margin: 0;
+    color: ${({ theme }) => theme.text.primary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         font-size: 14px;
