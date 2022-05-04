@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.c641e252.js",
+    "main.js": "/personal-homepage/static/js/main.9cce5aa1.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/photo.jpg": "/personal-homepage/static/media/photo.5d96703f3052a117508d.jpg",
-    "static/media/github-icon.svg": "/personal-homepage/static/media/github-icon.571d1ccb5b05142ffef2ab4d835a907a.svg",
+    "static/media/sun-icon.svg": "/personal-homepage/static/media/sun-icon.d0cb21032791c21326ff1d1095ebc0be.svg",
+    "static/media/github-icon.svg": "/personal-homepage/static/media/github-icon.c7899f3ee49852668f3f9e99e4a9d70f.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/linkedin-icon.svg": "/personal-homepage/static/media/linkedin-icon.9f38a04c76c9595b2da81e0828807b47.svg",
     "static/media/error.svg": "/personal-homepage/static/media/error.a713ca8752dc53fb52f84490e49aabe3.svg",
@@ -11,10 +12,10 @@
     "static/media/facebook-icon.svg": "/personal-homepage/static/media/facebook-icon.c86c9160f434f5f752b172ce0fe890d9.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/bullet.svg": "/personal-homepage/static/media/bullet.c28602c8be31d96b4a27bc3627dd6f6f.svg",
-    "main.c641e252.js.map": "/personal-homepage/static/js/main.c641e252.js.map",
+    "main.9cce5aa1.js.map": "/personal-homepage/static/js/main.9cce5aa1.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c641e252.js"
+    "static/js/main.9cce5aa1.js"
   ]
 }
