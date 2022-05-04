@@ -4,6 +4,9 @@ const colorNames = {
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     scienceBlue: "#0366D6",
+    dodgerBlue: "#2188FF",
+    mineShaft: "#252525",
+    lighterMineShaft: "#313131",
 };
 
 const common = {
@@ -27,9 +30,37 @@ export const lightTheme = {
         primary: colorNames.mercury,
         secondary: colorNames.white,
         contrast: colorNames.scienceBlue,
+        switch: colorNames.slateGray,
     },
     button: {
         text: colorNames.white,
         background: colorNames.scienceBlue,
-    }
+    },
+    icon: colorNames.white,
+    tile: {
+        title: colorNames.scienceBlue,
+    },
+}
+
+export const darkTheme = {
+    ...common,
+    text: {
+        primary: colorNames.white,
+        secondary: colorNames.white,
+        contrast: colorNames.dodgerBlue,
+    },
+    background: {
+        primary: colorNames.mineShaft,
+        secondary: colorNames.lighterMineShaft,
+        contrast: colorNames.dodgerBlue,
+        switch: colorNames.white,
+    },
+    button: {
+        text: colorNames.white,
+        background: colorNames.dodgerBlue,
+    },
+    icon: colorNames.black,
+    tile: {
+        title: colorNames.white,
+    },
 }
